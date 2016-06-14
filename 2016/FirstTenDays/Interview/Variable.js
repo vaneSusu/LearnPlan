@@ -58,7 +58,43 @@ getName();
  */
 
 // //ques3
-// console.log('question3');
-console.log(Foo());
-//Foo().getName();
+console.log('question3');
+Foo();
+getName();
+/**
+ * Answer3
+ * 1
+ * 先执行foo函数，而foo函数中return this ，this此时指向的是window，所以会寻找window作用域内的getName,
+ * 而foo函数执行后重新定义了getName()
+ */
+// //ques4
+console.log('question4');
+getName()
+/**
+ * 同上一步，window作用域中的getName已经被修改
+ */
 
+// // ques5
+console.log('question5');
+new Foo.getName();
+/**
+ * Answer5
+ * 注意js中运算符优先级 圆括号 > . > new
+ * 此处相当于 new (Foo.getNme)()
+ * 普通函数做构造函数的话 new运算符会执行该函数
+ */
+
+// // ques6
+console.log('question6');
+new Foo().getName();
+/**
+ * Answer6根据运算符优先级可以得到 实际执行情况
+ * (new Foo()).getName();
+ */
+
+// // ques7
+console.log('question7');
+new Foo.getName();
+/**
+ * Answer7
+ */
