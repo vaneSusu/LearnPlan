@@ -57,21 +57,21 @@ var isA = {a:'b'};
 // if(isA instanceof Array){
 // 	console.log('yes1!');
 // }
-if(Array.isArray(isA)){
-	console.log('yes1!');
-}
+// if(Array.isArray(isA)){
+// 	console.log('yes1!');
+// }
 //
-if(Array.isArray(colors)){
-	console.log('yes2!')
-}
+// if(Array.isArray(colors)){
+// 	console.log('yes2!')
+// }
 /**
  * 所有对象都有toLocaleString(),toString()和valueOf()方法
  */
-var newarrs = ['test','test2'];
-console.log(newarrs.toString())
-console.log(newarrs.valueOf());
-console.log(newarrs.toLocaleString())
-console.log(newarrs);
+// var newarrs = ['test','test2'];
+// console.log(newarrs.toString())
+// console.log(newarrs.valueOf());
+// console.log(newarrs.toLocaleString())
+// console.log(newarrs);
 
 
 
