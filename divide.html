@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var AddName = ['Abcd','Acsd','Bfds','bvgf','css','dfff','dfsf','fsds','gdfgdg','hyrr','Isdf'];
+		function divideLetter(arr){
+			var NameComp1 = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
+			var NameComp2 = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+			var data = {};
+			var arrl = arr.length;
+			for(var i=0;i<NameComp1.length;i++){
+				var dataA = [];
+				for(var j=0;j<arrl;j++){
+					//console.log(AddName[j][0]);
+					if(NameComp1[i] == arr[j][0]||NameComp2[i] == arr[j][0]){
+						dataA.push(arr[j]);
+					}
+					//console.log(dataA);
+				}
+				data[NameComp1[i]] = dataA;
+			}
+			return data;
+		}
+		//数组去重
+		Array.prototype.reDel(arr){
+			var newArr = [];
+			for(var i=0;i<)
+		}
+	    //
+	</script>
+</body>
+</html>
